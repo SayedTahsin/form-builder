@@ -35,7 +35,6 @@
           "type": "textarea",
           "label": "About You",
           "schema": "schema/properties/userinfo/properties/aboutMe",
-          "height": "300px",
           "validation": { "type": "required" }
         },
         {
@@ -148,6 +147,40 @@
               "age": 25
             }
           }
+        },
+        {
+          "type": "block-layout",
+          "showLabels": true,
+          "label": "Demp",
+          "elements": [
+            {
+              "type": "horizontal-layout",
+              "label": "Resources",
+              "showLabels": true,
+              "elements": [
+                {
+                  "type": "input",
+                  "label": "CPU Requests",
+                  "schema": "schema#/properties/nats/properties/resources/properties/requests/additionalProperties/cpu"
+                },
+                {
+                  "type": "input",
+                  "label": "CPU Limits",
+                  "schema": "schema#/properties/nats/properties/resources/properties/limits/additionalProperties/cpu"
+                },
+                {
+                  "type": "input",
+                  "label": "Memory Requests",
+                  "schema": "schema#/properties/nats/properties/resources/properties/requests/additionalProperties/memory"
+                },
+                {
+                  "type": "input",
+                  "label": "Memory Limits",
+                  "schema": "schema#/properties/nats/properties/resources/properties/limits/additionalProperties/memory"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
