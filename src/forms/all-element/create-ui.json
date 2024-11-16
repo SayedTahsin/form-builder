@@ -28,6 +28,14 @@
               "schema": "schema/properties/userinfo/properties/lastName",
               "loader": "fNameLoader",
               "validation": { "type": "required" }
+            },
+            {
+              "type": "input",
+              "label": "Pssword",
+              "schema": "schema/properties/userinfo/properties/password",
+              "loader": "fNameLoader",
+              "validation": { "type": "required" },
+              "hideValue": true
             }
           ]
         },
@@ -161,22 +169,22 @@
                 {
                   "type": "input",
                   "label": "CPU Requests",
-                  "schema": "schema#/properties/nats/properties/resources/properties/requests/additionalProperties/cpu"
+                  "schema": "schema#/properties/resources/properties/requests/additionalProperties/cpu"
                 },
                 {
                   "type": "input",
                   "label": "CPU Limits",
-                  "schema": "schema#/properties/nats/properties/resources/properties/limits/additionalProperties/cpu"
+                  "schema": "schema#/properties/resources/properties/limits/additionalProperties/cpu"
                 },
                 {
                   "type": "input",
                   "label": "Memory Requests",
-                  "schema": "schema#/properties/nats/properties/resources/properties/requests/additionalProperties/memory"
+                  "schema": "schema#/properties/resources/properties/requests/additionalProperties/memory"
                 },
                 {
                   "type": "input",
                   "label": "Memory Limits",
-                  "schema": "schema#/properties/nats/properties/resources/properties/limits/additionalProperties/memory"
+                  "schema": "schema#/properties/resources/properties/limits/additionalProperties/memory"
                 }
               ]
             }

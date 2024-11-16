@@ -17,6 +17,7 @@ const props = defineProps<{
   items?: string
   tempValue?: any
   parentData?: any
+  hideValue?: boolean
   setValue: (path: string, val: any, items?: string) => void
   deleteValue?: (key: string) => void
   parentErr?: (val: number) => void
@@ -69,7 +70,7 @@ const inputType = computed(() => {
   const type = get(wholeSchema, typePath)
   const format = get(wholeSchema, formatPath)
   if (type === 'integer') return 'number'
-  else if (type === 'string' && format === 'password') return 'password'
+  else if (type === 'string' && (format === 'password' || props.hideValue)) return 'password'
   return 'text'
 })
 
