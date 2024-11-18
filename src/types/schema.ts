@@ -32,11 +32,11 @@ interface BaseCommon {
   init?: Init
   watcher?: Watchers
   validation?: Validation
-  hideValue?: boolean
 }
 
 export interface Input extends BaseCommon {
   type: 'input'
+  hideValue?: boolean
 }
 
 export interface TextArea extends BaseCommon {

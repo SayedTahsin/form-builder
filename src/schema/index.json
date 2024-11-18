@@ -21,9 +21,6 @@
         "disable": {
           "type": ["boolean", "string"]
         },
-        "hideValue": {
-          "type": "boolean"
-        },
         "if": {
           "$ref": "#/definitions/IfType"
         },
@@ -61,9 +58,6 @@
         },
         "element": {
           "$ref": "#/definitions/BaseElement"
-        },
-        "hideValue": {
-          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -105,9 +99,6 @@
             "$ref": "#/definitions/BaseElement"
           },
           "type": "array"
-        },
-        "hideValue": {
-          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -206,9 +197,6 @@
       "properties": {
         "disable": {
           "type": ["boolean", "string"]
-        },
-        "hideValue": {
-          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -395,9 +383,6 @@
         "disable": {
           "type": ["boolean", "string"]
         },
-        "hideValue": {
-          "type": "boolean"
-        },
         "if": {
           "$ref": "#/definitions/IfType"
         },
@@ -458,9 +443,6 @@
       "properties": {
         "disable": {
           "type": ["boolean", "string"]
-        },
-        "hideValue": {
-          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -523,9 +505,6 @@
         "disable": {
           "type": ["boolean", "string"]
         },
-        "hideValue": {
-          "type": "boolean"
-        },
         "if": {
           "$ref": "#/definitions/IfType"
         },
@@ -563,9 +542,6 @@
       "properties": {
         "disable": {
           "type": ["boolean", "string"]
-        },
-        "hideValue": {
-          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -631,9 +607,6 @@
         "disable": {
           "type": ["boolean", "string"]
         },
-        "hideValue": {
-          "type": "boolean"
-        },
         "if": {
           "$ref": "#/definitions/IfType"
         },
@@ -671,9 +644,6 @@
         },
         "height": {
           "type": "string"
-        },
-        "hideValue": {
-          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
