@@ -31,7 +31,7 @@
             },
             {
               "type": "input",
-              "label": "Pssword",
+              "label": "Password",
               "schema": "schema/properties/userinfo/properties/password",
               "loader": "fNameLoader",
               "validation": { "type": "required" },

@@ -19,7 +19,13 @@
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -47,17 +53,27 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "schema", "type"],
+      "required": [
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "ArrayItem": {
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
         },
         "element": {
           "$ref": "#/definitions/BaseElement"
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -85,20 +101,31 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["element", "label", "schema", "type"],
+      "required": [
+        "element",
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "ArrayObject": {
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
         },
         "elements": {
           "items": {
             "$ref": "#/definitions/BaseElement"
           },
           "type": "array"
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -126,7 +153,12 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["elements", "label", "schema", "type"],
+      "required": [
+        "elements",
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "BaseElement": {
@@ -189,14 +221,24 @@
           "type": "string"
         }
       },
-      "required": ["elements", "label", "type"],
+      "required": [
+        "elements",
+        "label",
+        "type"
+      ],
       "type": "object"
     },
     "CheckBox": {
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -224,7 +266,11 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "schema", "type"],
+      "required": [
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "DerivedElement": {
@@ -282,7 +328,11 @@
           "type": "string"
         }
       },
-      "required": ["elements", "label", "type"],
+      "required": [
+        "elements",
+        "label",
+        "type"
+      ],
       "type": "object"
     },
     "IfType": {
@@ -292,11 +342,17 @@
           "type": "string"
         },
         "type": {
-          "enum": ["function", "computed"],
+          "enum": [
+            "function",
+            "computed"
+          ],
           "type": "string"
         }
       },
-      "required": ["type", "name"],
+      "required": [
+        "type",
+        "name"
+      ],
       "type": "object"
     },
     "Init": {
@@ -312,7 +368,10 @@
               "type": "string"
             }
           },
-          "required": ["type", "value"],
+          "required": [
+            "type",
+            "value"
+          ],
           "type": "object"
         },
         {
@@ -324,7 +383,10 @@
             },
             "value": {}
           },
-          "required": ["type", "value"],
+          "required": [
+            "type",
+            "value"
+          ],
           "type": "object"
         }
       ]
@@ -333,7 +395,13 @@
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -361,7 +429,11 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "schema", "type"],
+      "required": [
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "LayoutElement": {
@@ -378,7 +450,13 @@
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -409,7 +487,11 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "schema", "type"],
+      "required": [
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "MultiStepForm": {
@@ -432,14 +514,23 @@
           "type": "string"
         }
       },
-      "required": ["type", "step"],
+      "required": [
+        "type",
+        "step"
+      ],
       "type": "object"
     },
     "ObjectItem": {
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -467,7 +558,11 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "schema", "type"],
+      "required": [
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "Options": {
@@ -489,7 +584,10 @@
                 "type": "string"
               }
             },
-            "required": ["name", "value"],
+            "required": [
+              "name",
+              "value"
+            ],
             "type": "object"
           },
           "type": "array"
@@ -500,7 +598,13 @@
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -531,14 +635,25 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "options", "schema", "type"],
+      "required": [
+        "label",
+        "options",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "Select": {
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -569,7 +684,11 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "schema", "type"],
+      "required": [
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "SingleStepForm": {
@@ -595,14 +714,23 @@
           "type": "string"
         }
       },
-      "required": ["type", "elements"],
+      "required": [
+        "type",
+        "elements"
+      ],
       "type": "object"
     },
     "Switch": {
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -630,17 +758,27 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "schema", "type"],
+      "required": [
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "TextArea": {
       "additionalProperties": false,
       "properties": {
         "disable": {
-          "type": ["boolean", "string"]
+          "type": [
+            "boolean",
+            "string"
+          ]
         },
         "height": {
           "type": "string"
+        },
+        "hideValue": {
+          "type": "boolean"
         },
         "if": {
           "$ref": "#/definitions/IfType"
@@ -668,7 +806,11 @@
           "$ref": "#/definitions/Watchers"
         }
       },
-      "required": ["label", "schema", "type"],
+      "required": [
+        "label",
+        "schema",
+        "type"
+      ],
       "type": "object"
     },
     "Validation": {
@@ -681,7 +823,9 @@
               "type": "string"
             }
           },
-          "required": ["type"],
+          "required": [
+            "type"
+          ],
           "type": "object"
         },
         {
@@ -695,7 +839,10 @@
               "type": "string"
             }
           },
-          "required": ["type", "name"],
+          "required": [
+            "type",
+            "name"
+          ],
           "type": "object"
         }
       ]
@@ -713,7 +860,10 @@
           "type": "array"
         }
       },
-      "required": ["paths", "func"],
+      "required": [
+        "paths",
+        "func"
+      ],
       "type": "object"
     }
   }
