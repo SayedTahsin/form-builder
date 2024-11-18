@@ -43,6 +43,7 @@
           "type": "textarea",
           "label": "About You",
           "schema": "schema/properties/userinfo/properties/aboutMe",
+          "height": "300px",
           "validation": { "type": "required" }
         },
         {
