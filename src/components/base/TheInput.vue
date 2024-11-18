@@ -69,7 +69,7 @@ const inputType = computed(() => {
   const type = get(wholeSchema, typePath)
   const format = get(wholeSchema, formatPath)
   if (type === 'integer') return 'number'
-  else if (type === 'string' && format === 'password') return 'password'
+  else if (type === 'string' && (format === 'password' || props.element.isSecret)) return 'password'
   return 'text'
 })
 

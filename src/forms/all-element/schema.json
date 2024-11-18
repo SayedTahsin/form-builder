@@ -4,6 +4,13 @@
       "format": "int64",
       "type": "integer"
     },
+    "userinfo": {
+      "properties": {
+        "password": {
+          "type": "string"
+        }
+      }
+    },
     "linode": {
       "required": ["token"],
       "properties": {
@@ -211,6 +218,26 @@
       },
       "required": ["projectID", "serviceAccount"],
       "type": "object"
+    },
+    "resource": {
+      "properties": {
+        "requests": {
+          "properties": {
+            "additionalProperties": {
+              "cpu": "string",
+              "memory": "string"
+            }
+          }
+        },
+        "limits": {
+          "properties": {
+            "additionalProperties": {
+              "cpu": "string",
+              "memory": "string"
+            }
+          }
+        }
+      }
     }
   },
   "type": "object",
