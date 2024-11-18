@@ -36,7 +36,7 @@ interface BaseCommon {
 
 export interface Input extends BaseCommon {
   type: 'input'
-  hideValue?: boolean
+  isSecret?: boolean
 }
 
 export interface TextArea extends BaseCommon {

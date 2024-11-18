@@ -35,7 +35,7 @@
               "schema": "schema/properties/userinfo/properties/password",
               "loader": "fNameLoader",
               "validation": { "type": "required" },
-              "hideValue": true
+              "isSecret": true
             }
           ]
         },

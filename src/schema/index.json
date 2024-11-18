@@ -335,14 +335,14 @@
         "disable": {
           "type": ["boolean", "string"]
         },
-        "hideValue": {
-          "type": "boolean"
-        },
         "if": {
           "$ref": "#/definitions/IfType"
         },
         "init": {
           "$ref": "#/definitions/Init"
+        },
+        "isSecret": {
+          "type": "boolean"
         },
         "label": {
           "type": "string"

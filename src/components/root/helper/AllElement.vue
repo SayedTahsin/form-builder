@@ -49,7 +49,7 @@ const { setValue, deleteValue } = useGlobalModel()
     :set-value="setValue"
     :delete-value="deleteValue"
     :parent-err="parentErr"
-    :hide-value="el.hideValue"
+    :is-secret="el.isSecret"
   />
   <SelectSingle
     v-else-if="el.type === 'select'"
